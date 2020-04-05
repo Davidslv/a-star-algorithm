@@ -41,7 +41,7 @@ module AStar
 
       @next_nodes << node
     end
-    alias_method :next_nodes, :<<
+    alias_method :insert, :<<
 
     # Evaluates the distance of the current node with another node
     def distance(node)
@@ -57,7 +57,7 @@ module AStar
 
     # Heuristic total distance
     def f
-      @g + @f
+      @g + @h
     end
   end
 end

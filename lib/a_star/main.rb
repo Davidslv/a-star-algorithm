@@ -4,7 +4,7 @@ module AStar
       [start, goal].each do |input|
         raise ArgumentError,
           "Required a Node as input." +
-          "Received a #{input.class}" unless e.is_a? Node
+          "Received a #{input.class}" unless input.is_a? Node
       end
 
       # start and goal node
@@ -86,8 +86,8 @@ module AStar
     def find_node_with_min_f
       next_node = @openset.first
 
-      for node in 1...@openset.size
-        next_node = @openset[node] if node.f > @openset[node].f
+      for i in 1...@openset.size
+        next_node = @openset[i] if next_node.f > @openset[i].f
       end
 
       return next_node
