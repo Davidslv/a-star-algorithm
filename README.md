@@ -1,6 +1,6 @@
 # A-Star Algorithm
 
-### Introduction
+### Introduction
 
 A ruby implementation
 
@@ -11,14 +11,14 @@ changing the code for my own understanding.
 
 This is educational material.
 
-## I want to see the output
+### I want to see the output
 
 ```
 ▶ ./run
 ```
 
 
-# How to use the nodes
+### How to use the nodes
 
 ```sh
 ▶ irb -r ./lib/a_star
